@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.PawelSznuraDEV.clickchallange.ui.home.HomeFragment"
+        android:label="home_fragment"
+        tools:layout="@layout/home_fragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_playFragment"
+            app:destination="@id/playFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/afterFragment"
+        android:name="com.PawelSznuraDEV.clickchallange.ui.after.AfterFragment"
+        android:label="after_fragment"
+        tools:layout="@layout/after_fragment" />
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.PawelSznuraDEV.clickchallange.ui.game.GameFragment"
+        android:label="game_fragment"
+        tools:layout="@layout/game_fragment" >
+        <action
+            android:id="@+id/action_gameFragment_to_afterFragment"
+            app:destination="@id/afterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/playFragment"
+        android:name="com.PawelSznuraDEV.clickchallange.ui.play.PlayFragment"
+        android:label="play_fragment"
+        tools:layout="@layout/play_fragment" >
+        <action
+            android:id="@+id/action_playFragment_to_gameFragment"
+            app:destination="@id/gameFragment" />
+    </fragment>
+</navigation>
