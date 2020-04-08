@@ -1,11 +1,11 @@
-package com.PawelSznuraDEV.clickchallange.ui.after
+package com.pawelsznuradev.clickchallange.ui.after
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.PawelSznuraDEV.clickchallange.R
+import com.pawelsznuradev.clickchallange.R
 
 class AfterFragment : Fragment() {
 

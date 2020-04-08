@@ -6,7 +6,7 @@
     app:startDestination="@id/homeFragment">
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.PawelSznuraDEV.clickchallange.ui.home.HomeFragment"
+        android:name="com.pawelsznuradev.clickchallange.ui.home.HomeFragment"
         android:label="home_fragment"
         tools:layout="@layout/home_fragment" >
         <action
@@ -15,12 +15,12 @@
     </fragment>
     <fragment
         android:id="@+id/afterFragment"
-        android:name="com.PawelSznuraDEV.clickchallange.ui.after.AfterFragment"
+        android:name="com.pawelsznuradev.clickchallange.ui.after.AfterFragment"
         android:label="after_fragment"
         tools:layout="@layout/after_fragment" />
     <fragment
         android:id="@+id/gameFragment"
-        android:name="com.PawelSznuraDEV.clickchallange.ui.game.GameFragment"
+        android:name="com.pawelsznuradev.clickchallange.ui.game.GameFragment"
         android:label="game_fragment"
         tools:layout="@layout/game_fragment" >
         <action
@@ -29,7 +29,7 @@
     </fragment>
     <fragment
         android:id="@+id/playFragment"
-        android:name="com.PawelSznuraDEV.clickchallange.ui.play.PlayFragment"
+        android:name="com.pawelsznuradev.clickchallange.ui.play.PlayFragment"
         android:label="play_fragment"
         tools:layout="@layout/play_fragment" >
         <action

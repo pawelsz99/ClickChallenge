@@ -7,7 +7,7 @@ android {
     buildToolsVersion "29.0.2"
 
     defaultConfig {
-        applicationId "com.PawelSznuraDEV.clickchallange"
+        applicationId "com.pawelsznuradev.clickchallange"
         minSdkVersion 19
         targetSdkVersion 29
         versionCode 1
@@ -23,6 +23,9 @@ android {
         }
     }
 
+    dataBinding {
+        enabled = true
+    }
 }
 
 dependencies {
@@ -39,4 +42,8 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     implementation 'androidx.navigation:navigation-fragment-ktx:2.0.0'
     implementation 'androidx.navigation:navigation-ui-ktx:2.0.0'
+    // Material Design
+    implementation "com.google.android.material:material:1.1.0"
+
+    implementation 'com.jakewharton.timber:timber:4.7.1'
 }

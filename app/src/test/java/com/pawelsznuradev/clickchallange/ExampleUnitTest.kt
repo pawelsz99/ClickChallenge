@@ -1,4 +1,4 @@
-package com.PawelSznuraDEV.clickchallange
+package com.pawelsznuradev.clickchallange
 
 import org.junit.Test
 

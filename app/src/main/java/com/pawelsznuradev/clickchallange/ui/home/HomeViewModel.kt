@@ -1,4 +1,4 @@
-package com.PawelSznuraDEV.clickchallange.ui.home
+package com.pawelsznuradev.clickchallange.ui.home
 
 import androidx.lifecycle.ViewModel
 
