@@ -15,7 +15,6 @@ class MainActivity : AppCompatActivity() {
         @Suppress("UNUSED_VARIABLE")
         val binding = DataBindingUtil.setContentView<MainActivityBinding>(this, R.layout.main_activity)
 
-        val dataScore12 = DataScore(12, 2)
 
 
     }
