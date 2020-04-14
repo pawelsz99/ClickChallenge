@@ -17,7 +17,11 @@
         android:id="@+id/afterFragment"
         android:name="com.pawelsznuradev.clickchallange.ui.after.AfterFragment"
         android:label="after_fragment"
-        tools:layout="@layout/after_fragment" />
+        tools:layout="@layout/after_fragment" >
+        <action
+            android:id="@+id/action_afterFragment_to_playFragment"
+            app:destination="@id/playFragment" />
+    </fragment>
     <fragment
         android:id="@+id/gameFragment"
         android:name="com.pawelsznuradev.clickchallange.ui.game.GameFragment"

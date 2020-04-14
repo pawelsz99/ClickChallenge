@@ -10,6 +10,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.navigation.fragment.findNavController
 import com.pawelsznuradev.clickchallange.R
 import com.pawelsznuradev.clickchallange.databinding.HomeFragmentBinding
+import kotlin.system.exitProcess
 
 
 class HomeFragment : Fragment() {
@@ -31,7 +32,7 @@ class HomeFragment : Fragment() {
         }
 
         binding.homeQuitButton.setOnClickListener {
-            //TODO
+            exitProcess(0)
         }
 
         return binding.root

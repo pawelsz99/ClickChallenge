@@ -22,7 +22,14 @@ class PlayFragment : Fragment() {
             inflater, R.layout.play_fragment, container, false)
 
         binding.playGamemode1.setOnClickListener {
+            findNavController().navigate(R.id.action_playFragment_to_gameFragment)
+        }
 
+        binding.playGamemode2.setOnClickListener {
+            findNavController().navigate(R.id.action_playFragment_to_gameFragment)
+        }
+
+        binding.playGamemode3.setOnClickListener {
             findNavController().navigate(R.id.action_playFragment_to_gameFragment)
         }
 
