@@ -19,7 +19,8 @@ class GameViewModel : ViewModel() {
         private const val ONE_SECOND = 1000L
 
         // This is the total time of the game
-        private const val COUNTDOWN_TIME = 60000L
+        private const val COUNTDOWN_TIME = 5000L
+        //for testing 5 s
     }
 
     private val timer: CountDownTimer
