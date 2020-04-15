@@ -36,7 +36,7 @@ class GameFragment : Fragment() {
 //        }
 
         // Inflate view and obtain an instance of the binding class
-        binding = DataBindingUtil.inflate(inflater,R.layout.game_fragment,
+        binding = DataBindingUtil.inflate(inflater, R.layout.game_fragment,
             container,false)
 
         // Get the viewmodel
@@ -51,10 +51,10 @@ class GameFragment : Fragment() {
         binding.lifecycleOwner = this
 
         // Sets up event listening to navigate the player when the game is finished
-        viewModel.eventGameFinish.observe(this, Observer{isFinished ->
+        viewModel.eventGameFinish.observe(viewLifecycleOwner, Observer{isFinished ->
             if (isFinished){
                 val currentScore = viewModel.score.value ?:0
-                val action = GameFragmentDirections.action
+               // val action = GameFragmentDirections.action
             }
 
 
