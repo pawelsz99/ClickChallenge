@@ -8,6 +8,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
+import androidx.navigation.fragment.findNavController
 import com.pawelsznuradev.clickchallange.R
 import com.pawelsznuradev.clickchallange.databinding.GameFragmentBinding
 
@@ -26,14 +27,6 @@ class GameFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-//        val binding: GameFragmentBinding = DataBindingUtil.inflate(
-//            inflater, R.layout.game_fragment, container, false)
-//
-//        binding.gameButton.setOnClickListener {
-//            click()
-//            binding.gameCurrentScore.text = currentScore.toString()
-//        }
 
         // Inflate view and obtain an instance of the binding class
         binding = DataBindingUtil.inflate(inflater, R.layout.game_fragment,
@@ -54,21 +47,15 @@ class GameFragment : Fragment() {
         viewModel.eventGameFinish.observe(viewLifecycleOwner, Observer{isFinished ->
             if (isFinished){
                 val currentScore = viewModel.score.value ?:0
-               // val action = GameFragmentDirections.action
+                val action = GameFragmentDirections.actionGameFragmentToAfterFragment(currentScore)
+                findNavController().navigate(action)
+                viewModel.onGameFinishComplete()
             }
-
-
         })
-
-
-
 
         return binding.root
     }
 
-//    private fun click(){
-//        currentScore++
-//    }
 
 
 
