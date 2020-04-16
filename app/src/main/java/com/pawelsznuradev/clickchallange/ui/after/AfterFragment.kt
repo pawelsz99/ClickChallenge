@@ -1,16 +1,21 @@
 package com.pawelsznuradev.clickchallange.ui.after
 
+import android.content.ActivityNotFoundException
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.pawelsznuradev.clickchallange.R
 import com.pawelsznuradev.clickchallange.databinding.AfterFragmentBinding
 
 class AfterFragment : Fragment() {
+
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -29,8 +34,34 @@ class AfterFragment : Fragment() {
 
         binding.lifecycleOwner = this
 
+        binding.afterButtonPlayAgain.setOnClickListener {
+            findNavController().navigate(R.id.action_afterFragment_to_playFragment)
+        }
+
+        binding.afterButtonShare.setOnClickListener {
+            onShare(finalScore)
+        }
+
         return binding.root
 
 
     }
+
+
+    private fun onShare(finalScore: Int){
+        val sendIntent = Intent().apply {
+            action = Intent.ACTION_SEND
+            putExtra(Intent.EXTRA_TEXT, getString(R.string.share_text, finalScore))
+            type = "text/plain"
+        }
+        val shareIntent = Intent.createChooser(sendIntent, null)
+        try {
+            startActivity(shareIntent)
+        }   catch (ex: ActivityNotFoundException){
+            Toast.makeText(activity, getString(R.string.sharing_not_available),
+                Toast.LENGTH_LONG).show()
+        }
+    }
+
+
 }
