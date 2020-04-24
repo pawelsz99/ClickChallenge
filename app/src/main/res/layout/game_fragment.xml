@@ -39,11 +39,21 @@
             android:id="@+id/game_button"
             android:layout_width="273dp"
             android:layout_height="182dp"
-            android:text="Press"
             android:onClick="@{() -> gameViewModel.onGameButtonPressed()}"
+            android:text="Press"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/game_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="test"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/game_current_score" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

@@ -48,6 +48,7 @@ class AfterFragment : Fragment() {
     }
 
 
+
     private fun onShare(finalScore: Int){
         val sendIntent = Intent().apply {
             action = Intent.ACTION_SEND

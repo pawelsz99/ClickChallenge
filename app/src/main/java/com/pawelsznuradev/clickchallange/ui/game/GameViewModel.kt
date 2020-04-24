@@ -7,7 +7,11 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Transformations
 import androidx.lifecycle.ViewModel
 
-class GameViewModel : ViewModel() {
+
+
+class GameViewModel(gameMode: Int) : ViewModel() {
+
+    private var countDownTime: Long = 0
 
     companion object{
         // These represent different important times in the game, such as game length.
@@ -18,9 +22,15 @@ class GameViewModel : ViewModel() {
         // This is the number of milliseconds in a second
         private const val ONE_SECOND = 1000L
 
-        // This is the total time of the game
-        private const val COUNTDOWN_TIME = 5000L
-        //for testing 5 s
+        // This is the total time for gameMode1 - 5s
+        private const val COUNTDOWN_TIME1 = 5000L
+
+        // This is the total time for gameMode2 - 10s
+        private const val COUNTDOWN_TIME2 = 10000L
+
+        // This is the total time for gameMode1 - 30s
+        private const val COUNTDOWN_TIME3 = 30000L
+
     }
 
     private val timer: CountDownTimer
@@ -44,13 +54,22 @@ class GameViewModel : ViewModel() {
     val score: LiveData<Int>
         get() = _score
 
-
-
+    private var mode :Int = 0
 
     init {
         _score.value = 0
 
-        timer = object :CountDownTimer(COUNTDOWN_TIME, ONE_SECOND){
+        mode = gameMode
+
+        countDownTime = when (mode){
+            1 -> COUNTDOWN_TIME1
+            2 -> COUNTDOWN_TIME2
+            3 -> COUNTDOWN_TIME3
+            else -> 7000L
+        }
+
+
+        timer = object :CountDownTimer(countDownTime, ONE_SECOND){
 
             override fun onTick(millisUntilFinished: Long) {
                 _currentTime.value = (millisUntilFinished / ONE_SECOND)
@@ -65,6 +84,7 @@ class GameViewModel : ViewModel() {
 
         timer.start()
     }
+
 
     /** Methods for buttons presses **/
     fun onGameButtonPressed(){

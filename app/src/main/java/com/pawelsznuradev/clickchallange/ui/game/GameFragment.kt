@@ -9,15 +9,19 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.fragment.navArgs
 import com.pawelsznuradev.clickchallange.R
 import com.pawelsznuradev.clickchallange.databinding.GameFragmentBinding
+
+
 
 @Suppress("DEPRECATION")
 class GameFragment : Fragment() {
 
-    //private var currentScore = 0
+
 
     private lateinit var viewModel: GameViewModel
+    private lateinit var viewModelFactory: GameViewModelFactory
 
     private lateinit var binding: GameFragmentBinding
 
@@ -32,8 +36,13 @@ class GameFragment : Fragment() {
         binding = DataBindingUtil.inflate(inflater, R.layout.game_fragment,
             container,false)
 
-        // Get the viewmodel
+        val gameFragmentArgs by navArgs<GameFragmentArgs>()
+        val x = gameFragmentArgs.gamemode
+
+        viewModelFactory = GameViewModelFactory(x)
         viewModel = ViewModelProviders.of(this).get(GameViewModel::class.java)
+
+      //  binding.gameMode.text = x.toString()
 
         // Set the viewmodel for databinding - this allows the bound layout access to all of the
         // data in the VieWModel
@@ -42,6 +51,7 @@ class GameFragment : Fragment() {
         // Specify the current activity as the lifecycle owner of the binding. This is used so that
         // the binding can observe LiveData updates
         binding.lifecycleOwner = this
+
 
         // Sets up event listening to navigate the player when the game is finished
         viewModel.eventGameFinish.observe(viewLifecycleOwner, Observer{isFinished ->
@@ -55,7 +65,6 @@ class GameFragment : Fragment() {
 
         return binding.root
     }
-
 
 
 

@@ -22,15 +22,21 @@ class PlayFragment : Fragment() {
             inflater, R.layout.play_fragment, container, false)
 
         binding.playGamemode1.setOnClickListener {
-            findNavController().navigate(R.id.action_playFragment_to_gameFragment)
+            val gameMode = 1
+            val action = PlayFragmentDirections.actionPlayFragmentToGameFragment(gameMode)
+            findNavController().navigate(action)
         }
 
         binding.playGamemode2.setOnClickListener {
-            findNavController().navigate(R.id.action_playFragment_to_gameFragment)
+            val gameMode = 2
+            val action = PlayFragmentDirections.actionPlayFragmentToGameFragment(gameMode)
+            findNavController().navigate(action)
         }
 
         binding.playGamemode3.setOnClickListener {
-            findNavController().navigate(R.id.action_playFragment_to_gameFragment)
+            val gameMode = 3
+            val action = PlayFragmentDirections.actionPlayFragmentToGameFragment(gameMode)
+            findNavController().navigate(action)
         }
 
 
