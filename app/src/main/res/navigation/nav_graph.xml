@@ -25,6 +25,10 @@
             android:name="score"
             android:defaultValue="0"
             app:argType="integer"/>
+        <argument
+            android:name="gameMode"
+            android:defaultValue="0"
+            app:argType="integer"/>
     </fragment>
     <fragment
         android:id="@+id/gameFragment"

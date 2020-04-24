@@ -30,7 +30,19 @@ class AfterFragment : Fragment() {
 
         val finalScore = afterFragmentArgs.score
 
+        val x = afterFragmentArgs.gameMode
+        val gameMode: String
+
+        gameMode = when(x){
+            1 -> "5 seconds"
+            2 -> "10 seconds"
+            3 -> "30 seconds"
+            else -> " "
+        }
+
         binding.afterTextviewScore.text = """Final Score: $finalScore"""
+        binding.afterGameMode.text = gameMode
+
 
         binding.lifecycleOwner = this
 
@@ -39,7 +51,7 @@ class AfterFragment : Fragment() {
         }
 
         binding.afterButtonShare.setOnClickListener {
-            onShare(finalScore)
+            onShare(finalScore, gameMode)
         }
 
         return binding.root
@@ -49,10 +61,10 @@ class AfterFragment : Fragment() {
 
 
 
-    private fun onShare(finalScore: Int){
+    private fun onShare(finalScore: Int, gameMode: String){
         val sendIntent = Intent().apply {
             action = Intent.ACTION_SEND
-            putExtra(Intent.EXTRA_TEXT, getString(R.string.share_text, finalScore))
+            putExtra(Intent.EXTRA_TEXT, getString(R.string.share_text, finalScore, gameMode))
             type = "text/plain"
         }
         val shareIntent = Intent.createChooser(sendIntent, null)

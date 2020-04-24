@@ -40,9 +40,8 @@ class GameFragment : Fragment() {
         val x = gameFragmentArgs.gamemode
 
         viewModelFactory = GameViewModelFactory(x)
-        viewModel = ViewModelProviders.of(this).get(GameViewModel::class.java)
+        viewModel = ViewModelProviders.of(this, viewModelFactory).get(GameViewModel::class.java)
 
-      //  binding.gameMode.text = x.toString()
 
         // Set the viewmodel for databinding - this allows the bound layout access to all of the
         // data in the VieWModel
@@ -57,7 +56,7 @@ class GameFragment : Fragment() {
         viewModel.eventGameFinish.observe(viewLifecycleOwner, Observer{isFinished ->
             if (isFinished){
                 val currentScore = viewModel.score.value ?:0
-                val action = GameFragmentDirections.actionGameFragmentToAfterFragment(currentScore)
+                val action = GameFragmentDirections.actionGameFragmentToAfterFragment(currentScore, x)
                 findNavController().navigate(action)
                 viewModel.onGameFinishComplete()
             }
