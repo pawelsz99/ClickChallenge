@@ -1,8 +1,21 @@
 <resources>
     <string name="app_name">ClickChallange</string>
+    <string name="home_quit_button">Quit</string>
+    <string name="home_play_button">Play</string>
+    <string name="home_more_button">About me</string>
 
-    <string name="share_text">I\'ve clicked the button %1$d times in %2$s #ClickChallange</string>
-<!--    <string name="share_text">I\'ve clicked %1$d times the button in gamemode #ClickChallange</string>-->
+    <string name="select_game_mode">Select Game Mode</string>
+    <string name="play_gamemode1">5 seconds</string>
+    <string name="play_gamemode2">10 seconds</string>
+    <string name="play_gamemode3">30 seconds</string>
+
+    <string name="game_button_text">Press</string>
     <string name="score_format">Current Score: %d</string>
+
+    <string name="after_button_share_text">Share</string>
+    <string name="after_congratulations">Congratulations</string>
+    <string name="after_textview_score_text">Score</string>
+    <string name="after_gameMode_text">Game Mode</string>
+    <string name="share_text">I\'ve clicked the button %1$d times in %2$s #ClickChallange</string>
     <string name="sharing_not_available">Sharing Not Available</string>
 </resources>

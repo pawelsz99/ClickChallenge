@@ -18,8 +18,6 @@ import com.pawelsznuradev.clickchallange.databinding.GameFragmentBinding
 @Suppress("DEPRECATION")
 class GameFragment : Fragment() {
 
-
-
     private lateinit var viewModel: GameViewModel
     private lateinit var viewModelFactory: GameViewModelFactory
 

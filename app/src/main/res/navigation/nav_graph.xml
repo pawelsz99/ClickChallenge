@@ -11,7 +11,11 @@
         tools:layout="@layout/home_fragment" >
         <action
             android:id="@+id/action_homeFragment_to_playFragment"
-            app:destination="@id/playFragment" />
+            app:destination="@id/playFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/afterFragment"
@@ -20,7 +24,12 @@
         tools:layout="@layout/after_fragment" >
         <action
             android:id="@+id/action_afterFragment_to_playFragment"
-            app:destination="@id/playFragment" />
+            app:destination="@id/playFragment"
+            app:popUpTo="@id/homeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
         <argument
             android:name="score"
             android:defaultValue="0"
@@ -38,7 +47,11 @@
         <action
             android:id="@+id/action_gameFragment_to_afterFragment"
             app:destination="@id/afterFragment"
-            app:popUpTo="@id/playFragment" />
+            app:popUpTo="@id/playFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
         <argument
             android:name="gamemode"
             android:defaultValue="1"
@@ -51,6 +64,10 @@
         tools:layout="@layout/play_fragment" >
         <action
             android:id="@+id/action_playFragment_to_gameFragment"
-            app:destination="@id/gameFragment" />
+            app:destination="@id/gameFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"  />
     </fragment>
 </navigation>
