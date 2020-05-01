@@ -1,4 +1,4 @@
-package com.pawelsznuradev.clickchallange.ui.play
+package com.pawelsznuradev.clickchallenge.ui.play
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,8 +7,8 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.pawelsznuradev.clickchallange.R
-import com.pawelsznuradev.clickchallange.databinding.PlayFragmentBinding
+import com.pawelsznuradev.clickchallenge.R
+import com.pawelsznuradev.clickchallenge.databinding.PlayFragmentBinding
 
 class PlayFragment : Fragment() {
 

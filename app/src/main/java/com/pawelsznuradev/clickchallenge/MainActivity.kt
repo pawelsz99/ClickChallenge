@@ -1,10 +1,10 @@
-package com.pawelsznuradev.clickchallange
+package com.pawelsznuradev.clickchallenge
 
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
-import com.pawelsznuradev.clickchallange.databinding.MainActivityBinding
+import com.pawelsznuradev.clickchallenge.databinding.MainActivityBinding
 
 
 

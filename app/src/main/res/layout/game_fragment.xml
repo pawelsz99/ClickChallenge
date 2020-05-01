@@ -7,7 +7,7 @@
 <data>
     <variable
         name="gameViewModel"
-        type="com.pawelsznuradev.clickchallange.ui.game.GameViewModel" />
+        type="com.pawelsznuradev.clickchallenge.ui.game.GameViewModel" />
 </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -21,10 +21,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@{gameViewModel.currentTimeString}"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.120000005" />
 
         <TextView
             android:id="@+id/game_current_score"

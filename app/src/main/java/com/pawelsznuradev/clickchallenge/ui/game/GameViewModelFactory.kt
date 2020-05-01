@@ -1,4 +1,4 @@
-package com.pawelsznuradev.clickchallange.ui.game
+package com.pawelsznuradev.clickchallenge.ui.game
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider

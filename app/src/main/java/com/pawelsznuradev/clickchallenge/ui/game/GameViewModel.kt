@@ -1,4 +1,4 @@
-package com.pawelsznuradev.clickchallange.ui.game
+package com.pawelsznuradev.clickchallenge.ui.game
 
 import android.os.CountDownTimer
 import android.text.format.DateUtils

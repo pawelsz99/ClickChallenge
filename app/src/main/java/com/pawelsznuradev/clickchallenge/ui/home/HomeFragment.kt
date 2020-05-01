@@ -1,4 +1,4 @@
-package com.pawelsznuradev.clickchallange.ui.home
+package com.pawelsznuradev.clickchallenge.ui.home
 
 
 import android.os.Bundle
@@ -8,8 +8,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.fragment.findNavController
-import com.pawelsznuradev.clickchallange.R
-import com.pawelsznuradev.clickchallange.databinding.HomeFragmentBinding
+import com.pawelsznuradev.clickchallenge.R
+import com.pawelsznuradev.clickchallenge.databinding.HomeFragmentBinding
 import kotlin.system.exitProcess
 
 

@@ -1,4 +1,4 @@
-package com.pawelsznuradev.clickchallange.ui.game
+package com.pawelsznuradev.clickchallenge.ui.game
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,8 +10,8 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
-import com.pawelsznuradev.clickchallange.R
-import com.pawelsznuradev.clickchallange.databinding.GameFragmentBinding
+import com.pawelsznuradev.clickchallenge.R
+import com.pawelsznuradev.clickchallenge.databinding.GameFragmentBinding
 
 
 

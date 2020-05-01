@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name">Click Challange</string>
+    <string name="app_name">Click Challenge</string>
     <string name="home_quit_button">Quit</string>
     <string name="home_play_button">Play</string>
-    <string name="home_more_button">About me</string>
+    <string name="home_more_button">About</string>
 
     <string name="select_game_mode">Select Game Mode</string>
     <string name="play_gamemode1">5 seconds</string>

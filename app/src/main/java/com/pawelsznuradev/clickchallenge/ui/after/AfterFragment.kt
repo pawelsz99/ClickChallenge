@@ -1,4 +1,4 @@
-package com.pawelsznuradev.clickchallange.ui.after
+package com.pawelsznuradev.clickchallenge.ui.after
 
 import android.content.ActivityNotFoundException
 import android.content.Intent
@@ -11,8 +11,8 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
-import com.pawelsznuradev.clickchallange.R
-import com.pawelsznuradev.clickchallange.databinding.AfterFragmentBinding
+import com.pawelsznuradev.clickchallenge.R
+import com.pawelsznuradev.clickchallenge.databinding.AfterFragmentBinding
 
 class AfterFragment : Fragment() {
 
