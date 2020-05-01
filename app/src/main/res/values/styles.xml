@@ -1,13 +1,42 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="fontFamily">@font/racing_sans_one</item>
         <item name="android:fontFamily">@font/racing_sans_one</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
     </style>
+
+    <style name="MyLayout">
+        <item name="android:background">@color/colorAccent</item>
+    </style>
+
+    <style name="MyTitle" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginLeft">@dimen/margin_wide</item>
+        <item name="android:layout_marginTop">@dimen/margin_wide</item>
+        <item name="android:layout_marginRight">@dimen/margin_wide</item>
+        <item name="android:layout_marginBottom">@dimen/margin_wide</item>
+
+    </style>
+
+    <style name="MyButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:layout_marginLeft">@dimen/margin_site</item>
+        <item name="android:layout_marginTop">@dimen/margin_wide</item>
+        <item name="android:layout_marginRight">@dimen/margin_site</item>
+        <item name="android:layout_marginBottom">@dimen/margin_wide</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">20sp</item>
+
+    </style>
+
+
+
 
 </resources>

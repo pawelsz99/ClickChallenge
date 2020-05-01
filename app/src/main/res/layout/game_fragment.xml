@@ -17,6 +17,7 @@
 
         <TextView
             android:id="@+id/game_time_left"
+            style="@style/MyTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@{gameViewModel.currentTimeString}"
@@ -27,6 +28,7 @@
 
         <TextView
             android:id="@+id/game_current_score"
+            style="@style/MyTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@{@string/score_format(gameViewModel.score)}"
@@ -37,8 +39,9 @@
 
         <Button
             android:id="@+id/game_button"
-            android:layout_width="273dp"
-            android:layout_height="182dp"
+            style="@style/MyButton"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
             android:onClick="@{() -> gameViewModel.onGameButtonPressed()}"
             android:text="@string/game_button_text"
             app:layout_constraintBottom_toBottomOf="parent"

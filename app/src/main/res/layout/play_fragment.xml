@@ -10,6 +10,7 @@
 
         <TextView
             android:id="@+id/play_title"
+            style="@style/MyTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/select_game_mode"
@@ -20,7 +21,8 @@
 
         <Button
             android:id="@+id/play_gamemode1"
-            android:layout_width="wrap_content"
+            style="@style/MyButton"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/play_gamemode1"
             app:layout_constraintEnd_toEndOf="parent"
@@ -30,7 +32,8 @@
 
         <Button
             android:id="@+id/play_gamemode2"
-            android:layout_width="wrap_content"
+            style="@style/MyButton"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/play_gamemode2"
             app:layout_constraintEnd_toEndOf="parent"
@@ -40,7 +43,8 @@
 
         <Button
             android:id="@+id/play_gamemode3"
-            android:layout_width="wrap_content"
+            style="@style/MyButton"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/play_gamemode3"
             app:layout_constraintEnd_toEndOf="parent"

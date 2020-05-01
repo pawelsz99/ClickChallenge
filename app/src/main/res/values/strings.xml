@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ClickChallange</string>
+    <string name="app_name">Click Challange</string>
     <string name="home_quit_button">Quit</string>
     <string name="home_play_button">Play</string>
     <string name="home_more_button">About me</string>
