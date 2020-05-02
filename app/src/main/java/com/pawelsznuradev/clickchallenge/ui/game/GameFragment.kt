@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProviders
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.pawelsznuradev.clickchallenge.R
@@ -38,7 +38,7 @@ class GameFragment : Fragment() {
         val x = gameFragmentArgs.gamemode
 
         viewModelFactory = GameViewModelFactory(x)
-        viewModel = ViewModelProviders.of(this, viewModelFactory).get(GameViewModel::class.java)
+        viewModel = ViewModelProvider(this, viewModelFactory).get(GameViewModel::class.java)
 
 
         // Set the viewmodel for databinding - this allows the bound layout access to all of the
