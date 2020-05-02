@@ -21,18 +21,12 @@
 
 
     <string name="about_title">About</string>
-    <string name="about_text">Coś tam coś tam ldgkdfklgn kjfrde nkjfdngk jfdngjk
-        Right-click it
-
-Select Refactor
-
-Click on Rename
-
-In the Pop-up dialog, click on Rename Package instead of Rename Directory
-
-Enter the new name and hit Refactor
-
-Allow a minute to let Android Studio update all changes</string>
+    <string name="about_text">Hey! I’m Click Challenge. My creator is Pawel Sznura.
+        Maybe I’m not the best game on the market, but I brought Pawel a huge step closer to his android development carrier.
+        For more information visit my GitHub page:</string>
+    <string name="github_link">https://github.com/pawelsz99/ClickChallenge</string>
+    <string name="github">GitHub</string>
+    
     <string name="about_button_text">Go back</string>
 
 </resources>
