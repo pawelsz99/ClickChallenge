@@ -28,7 +28,7 @@ class HomeFragment : Fragment() {
         }
 
         binding.homeMoreButton.setOnClickListener {
-            //TODO
+            findNavController().navigate(R.id.action_homeFragment_to_aboutFragment)
         }
 
         binding.homeQuitButton.setOnClickListener {
