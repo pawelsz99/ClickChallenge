@@ -73,7 +73,8 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="scalingPercent" value="66" />
+                                                <entry key="scalingPercent" value="115" />
+                                                <entry key="trimmed" value="true" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -95,10 +96,9 @@
                                   <option name="values">
                                     <map>
                                       <entry key="backgroundAssetType" value="COLOR" />
-                                      <entry key="backgroundColor" value="273fdc" />
-                                      <entry key="foregroundAssetType" value="CLIP_ART" />
-                                      <entry key="foregroundImage" value="C:\Program Files\Android\Android Studio\plugins\android\lib\templates\gradle-projects\NewAndroidModule\root\res\mipmap-xxxhdpi\ic_launcher.png" />
-                                      <entry key="previewDensity" value="MEDIUM" />
+                                      <entry key="backgroundColor" value="63a4ff" />
+                                      <entry key="foregroundImage" value="C:\Users\pawel\OneDrive - NESCol\Android Studio\ClickChallenge\app\src\main\res\mipmap-mdpi\apka1.png" />
+                                      <entry key="outputName" value="new_icon" />
                                     </map>
                                   </option>
                                 </PersistentState>
