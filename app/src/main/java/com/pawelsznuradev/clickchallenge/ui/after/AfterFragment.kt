@@ -26,7 +26,7 @@ class AfterFragment : Fragment() {
         val binding: AfterFragmentBinding = DataBindingUtil.inflate(
             inflater, R.layout.after_fragment, container, false)
 
-        val afterFragmentArgs by navArgs<AfterFragmentArgs>()
+        val afterFragmentArgs by  navArgs<AfterFragmentArgs>()
 
         val finalScore = afterFragmentArgs.score
 
