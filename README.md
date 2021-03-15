@@ -1,5 +1,4 @@
 # ClickChallenge
-My first android app
 
 A simple game which challenges the player to click as much as possible on the screen.
 
